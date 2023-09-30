@@ -44,7 +44,8 @@
 
 	const viewEvt = (evt) => {
 		const url = `events/view/?event=${encodeURIComponent(JSON.stringify(evt))}`
-		redirectTo(url)
+		console.log(url)
+		//redirectTo(url)
 	}
 
 	const viewTicket = (ticket) => {
