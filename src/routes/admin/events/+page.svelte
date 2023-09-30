@@ -130,7 +130,7 @@
 	{/each}
 	<div class="mt-5 mb-3 text-gray-400"><a on:click={getMoreUserEvts}>See more</a></div>
 	{:else}
-	<button class="custom-bg p-3 mt-5 mb-3" on:click={() => {redirectTo('../newEvent')}}>Create an event</button>
+	<button class="custom-bg p-3 mt-5 mb-3" on:click={() => {redirectTo('../../../admin/newEvent')}}>Create an event</button>
 	{/if}
 </div>
 {:else}
