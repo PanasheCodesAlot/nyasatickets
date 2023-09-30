@@ -57,7 +57,7 @@
 
 	//Redirects to view event
 	const viewEvt = (evt) => {
-		const url = `events/view/?event=${JSON.stringify(evt)}`
+		const url = `events/view/?event=${encodeURIComponent(JSON.stringify(evt))}`
 		redirectTo(url)
 	}
 
