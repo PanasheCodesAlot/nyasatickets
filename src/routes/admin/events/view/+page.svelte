@@ -88,7 +88,7 @@
 <div class="mt-8">
     <div class="detail"><Location /> <span class="ml-3">{JSON.parse(event.event_details).location}</span></div>
     <div class="detail mt-5"> <Clock /> <span class="ml-3">{JSON.parse(event.event_details).time}, {JSON.parse(event.event_details).date}</span></div>
-    <div class="detail mt-5"> <Tag /> <span class="ml-3">MK {event.price}</span></div>
+    <div class="detail mt-5"> <Tag /> <span class="ml-3">MK {event.price + (event.price * 5 / 100)}</span></div>
     <div class="detail mt-5"> <Packaged /> <span class="ml-3">
         {event.sold} / {event.target_amount}
     </span></div>
