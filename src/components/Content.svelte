@@ -64,6 +64,7 @@
 		if (evts.length > 0) {
 			mostApprovedShow = evts[0]
 			evts.splice(0, 1)
+			shows = evts
 
 		} else {
 			noEvt = true
