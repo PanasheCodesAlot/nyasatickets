@@ -293,7 +293,7 @@ function hasExpired(dateString) {
 											/>
 											<span class="relative">
 												{#if ticket.verified}
-													<span style='color: #186F65'>Unverified</span>
+													<span style='color: #186F65'>Verified</span>
 												{:else}
 													<span style='color: #C70039'>Unverified</span>
 												{/if}
