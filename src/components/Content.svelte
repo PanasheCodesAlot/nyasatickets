@@ -143,6 +143,7 @@ function hasExpired(dateString) {
 	{:else}
 	<Loader />
 	{/if}
+	{#if shows.length > 1}
 	<div class="mt-6 mb-3 text-gray-400">Available events</div>
 	{#if loadingConditions.availableEvents}
 	<div class="p-4 font-normal rounded-2xl" style="background-color: rgb(146 151 179 / 13%)">
@@ -176,6 +177,7 @@ function hasExpired(dateString) {
 	</div>
 	{:else}
 	<Loader />
+	{/if}
 	{/if}
 	<div class="mt-6 mb-3 text-gray-400">Tickets</div>
 	{#if loadingConditions.tickets}
