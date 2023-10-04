@@ -75,9 +75,9 @@
 					<span class="text-gray-400">- New</span>
 					{/if}
 				</p>
-				<p class="desc">{notif.message}</p>
+				<div><p class="text-gray-400"><strong>{extractDate(notif.created_at)}</strong></p></div>
 			</div>
-			<div class='mt-3'><p class="text-gray-400"><strong>{extractDate(notif.created_at)}</strong></p></div>
+			<p class="desc mt-3">{notif.message}</p>
 		</div>
 		<p class="mt-5 text-gray-400">NyasaTickets Team</p>
 	</div>
