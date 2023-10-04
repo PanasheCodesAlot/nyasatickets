@@ -12,6 +12,7 @@
     import { onMount } from "svelte";
 
 	async function getUserTickets () {
+		console.log(shows)
 		if (user != null) {
 			const request = await getTickets(user.email)
 			const tcks = request.data
@@ -59,8 +60,6 @@
 		const evts = request.data
 
 		shows = evts
-		console.log(shows, 111)
-
 		if (evts.length > 0) {
 			mostApprovedShow = evts[0]
 			evts.splice(0, 1)
