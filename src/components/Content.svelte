@@ -59,7 +59,7 @@
 		const evts = request.data
 
 		shows = evts
-		console.log(evts)
+		console.log(shows, 111)
 
 		if (evts.length > 0) {
 			mostApprovedShow = evts[0]
