@@ -67,8 +67,8 @@
 <div class="notifs">
 	{#each notifs as notif}
 	<div class="notifcon p-4 mt-3">
-		<div class="notifcon-inner">
-			<div>
+		<div>
+			<div class="notifcon-inner">
 				<p>
 					<strong>{notif.title}</strong>
 					{#if notif.viewed == false}
@@ -77,7 +77,7 @@
 				</p>
 				<p class="desc">{notif.message}</p>
 			</div>
-			<div><p class="text-gray-400"><strong>{extractDate(notif.created_at)}</strong></p></div>
+			<div class='mt-3'><p class="text-gray-400"><strong>{extractDate(notif.created_at)}</strong></p></div>
 		</div>
 		<p class="mt-5 text-gray-400">NyasaTickets Team</p>
 	</div>
