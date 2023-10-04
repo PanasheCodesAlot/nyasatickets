@@ -32,7 +32,8 @@
 
     const copyLink = () => {
         const elm = document.createElement('textarea')
-        elm.value = location.href
+	const evtCode = event.evtCode
+        elm.value = `https://creative-pegasus-1d3e37.netlify.app/admin/searchResults?q=${evtCode}`
 
         document.body.appendChild(elm)
         elm.select()
