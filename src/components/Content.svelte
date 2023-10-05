@@ -50,7 +50,7 @@
 	}
 
 	const viewTicket = (ticket) => {
-		const url = `./admin/tickets/view?ticket=${ticket.code}`
+		const url = `/admin/tickets/view?ticket=${ticket.code}`
 		redirectTo(url)
 	}
 
