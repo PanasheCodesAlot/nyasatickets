@@ -131,7 +131,12 @@ function hasExpired(dateString) {
 				<Ballon /><span class="ml-3">{JSON.parse( mostApprovedShow.event_details).name}</span>
 			</h3>
 			<div class="font-normal text-sm mt-4 mb-4 text-white overflow-hidden">
-				{JSON.parse(mostApprovedShow.event_details).desc}
+				{#if mostApprovedShow != {}}
+					{JSON.parse(mostApprovedShow.event_details).desc.substring(0, 100)}
+					{#if JSON.parse(mostApprovedShow.event_details).desc.length >= 100}
+						...
+					{/if}
+				{/if}
 			</div>
 			{#if mostApprovedShow.target_amount - mostApprovedShow.sold > 0}
 				<button class="py-2 px-4 bg-blue-700 rounded-2xl" on:click={() => {viewEvt(mostApprovedShow)}}> Buy a ticket</button>
