@@ -77,7 +77,7 @@
 <style>
 	.notif-bubble {
 		padding: 5px;
-		color: rgb(146 151 179 / 40%);
+		color: rgb(146 151 179 / 80%);
 		border-radius: 40px;
 		width: 40px;
 		height: 40px;
