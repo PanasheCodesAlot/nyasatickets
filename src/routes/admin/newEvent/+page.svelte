@@ -250,7 +250,7 @@
 			<div class="mt-3"><input type="text" placeholder="Name of event" bind:value={inputs.name}></div>
 			<div class="mt-3"><input type="text" placeholder="Location" bind:value={inputs.location}></div>
 		{:else if steps == 2}
-			<div class="mt-3"><textarea placeholder="Description" bind:value={inputs.desc}></textarea></div>
+			<div class="mt-3"><textarea placeholder="Description (1000 max characters)" bind:value={inputs.desc}></textarea></div>
 		{:else if steps == 3}
 			<div class="mt-3"><input type="number" placeholder="Amount of audience" bind:value={inputs.amount}></div>
 			<div class="mt-3"><input type="number" placeholder="Cost per ticket" bind:value={inputs.price}></div>
