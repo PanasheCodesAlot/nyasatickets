@@ -33,7 +33,7 @@
     const copyLink = () => {
         const elm = document.createElement('textarea')
 	const evtCode = JSON.parse(event.event_details).evtCode
-        elm.value = `https://creative-pegasus-1d3e37.netlify.app/admin/searchResults?q=${evtCode}`
+        elm.value = `https://nyasatickets.com/admin/searchResults?q=${evtCode}`
 
         document.body.appendChild(elm)
         elm.select()
