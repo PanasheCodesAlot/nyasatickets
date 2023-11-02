@@ -25,7 +25,7 @@
             
         )
 
-        steps++
+        
     }
 
     async function verifyTkt() {
@@ -33,12 +33,13 @@
 
         if (request.error == null) {
             notifyUser()
+            steps = 3
         }
 
     }
 
     async function searchCode () {
-        steps++
+        steps = 2
         const request = await getTicketByCode(code)
         const ticketData = request.data
 
@@ -72,7 +73,7 @@
         }
     
         const faliure = result => {
-            console.log(result)
+            alert(result)
         }
     
         scanner.render(success, faliure)
