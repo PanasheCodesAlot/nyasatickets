@@ -58,8 +58,8 @@
     const setupScan = () => {
         const scanner = new Html5QrcodeScanner ('reader', {
             qrbox: {
-                width: 400,
-                height: 400
+                width: 300,
+                height: 300
             },
             fps: 20
             },
@@ -69,11 +69,14 @@
             code = result
             console.log(code)
 
-            searchCode()
+            if (!canScan) {
+                searchCode()
+                canScan = true
+            }
         }
     
         const faliure = result => {
-            alert(result)
+            console.log(result)
         }
     
         scanner.render(success, faliure)
@@ -87,6 +90,7 @@
     let code
     let ticket
     let accessError = ''
+    let canScan = false
     $: width = steps * 100 / 3
 
     
